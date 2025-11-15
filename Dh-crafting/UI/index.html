@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ovo&family=Press+Start+2P&family=Source+Sans+Pro&family=VT323&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.5.0/css/pro.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="Crafting-Hero">
+        <header>Crafting</header>
+
+        <div class="Crating-Items">
+            <!-- <div class="Crating-Item">
+                <div class="box-img-item">
+                    <img
+                        src="https://cdn.discordapp.com/attachments/1220822236827488327/1279175708761002114/water_bottle.png?ex=66d42576&is=66d2d3f6&hm=ad5173708efbd8e732c22d6ad4f975bc8c22e56af9081047f2fe361b98980601&">
+                </div>
+                <h4 class="Crafting-Item-Text">Armor</h4>
+            </div> -->
+
+
+            <div class="Crating-Item" data-Item="lockpick" data-label="Lockpick" data-level="5" data-time="10000" data-amount="1" data-price="5">
+                <div class="box-img-item">
+                    <img
+                        src="https://cdn.discordapp.com/attachments/1220822236827488327/1279175708761002114/water_bottle.png?ex=66d42576&is=66d2d3f6&hm=ad5173708efbd8e732c22d6ad4f975bc8c22e56af9081047f2fe361b98980601&">
+               </div>
+               <h4 class="Crafting-Item-Text">Armor</h4>
+            </div>
+
+
+            <div class="Crating-Item" data-Item="test" data-label="test" data-level="2" data-time="1000" data-amount="2" data-price="212">
+                <div class="box-img-item">
+                    <img
+                        src="https://cdn.discordapp.com/attachments/1220822236827488327/1279175708761002114/water_bottle.png?ex=66d42576&is=66d2d3f6&hm=ad5173708efbd8e732c22d6ad4f975bc8c22e56af9081047f2fe361b98980601&">
+               </div>
+               <h4 class="Crafting-Item-Text">Armor</h4>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="Crafting-Info-Craft" style="display: none;">
+            <div class="Info-Item">
+                <div class="Info-Item-Header">
+                    <!-- <img -->
+                    <!-- src="https://cdn.discordapp.com/attachments/1220822236827488327/1279175708761002114/water_bottle.png?ex=66d42576&is=66d2d3f6&hm=ad5173708efbd8e732c22d6ad4f975bc8c22e56af9081047f2fe361b98980601&"> -->
+                    <!-- <h3 class="Info-Item-Header-Text">Advanced Lockpick</h3> -->
+
+
+                    <img id="Info-Item-Header-Img"
+                        src="https://cdn.discordapp.com/attachments/1220822236827488327/1279175708761002114/water_bottle.png?ex=66d42576&is=66d2d3f6&hm=ad5173708efbd8e732c22d6ad4f975bc8c22e56af9081047f2fe361b98980601&">
+                    <h3 class="Info-Item-Header-Text">Advanced Lockpick</h3>
+                </div>
+
+                <div class="Info-Item-Boxes">
+                    <div class="Info-Item-Box Price">$0</div>
+                    <div class="Info-Item-Box Amount">1x</div>
+                    <div class="Info-Item-Box Time">00:10</div>
+                    <div class="Info-Item-Box Level">0 <span>LVL</span></div>
+                </div>
+
+                <div class="Info-Item-Req">
+                    <div class="Info-Item-Req-header">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <h3 class="Info-Item-Req-Header-Text"> Requirements </h3>
+                    </div>
+
+
+                                    
+                    <div class="Info-Item-Req-Items">
+                        <div class="Info-Item-Req-Item">
+                            <div class="Info-Item-Req-Item-First">
+                                <h5 class="Info-Item-Req-Item-Amount-First">2x</h5>
+                                <img src="https://cdn.discordapp.com/attachments/1220822236827488327/1279175708761002114/water_bottle.png?ex=66d42576&is=66d2d3f6&hm=ad5173708efbd8e732c22d6ad4f975bc8c22e56af9081047f2fe361b98980601&"
+                                    class="Info-Item-Req-Item-Img-First">
+                            </div>
+                            <div class="Info-Item-Req-Item-Name">Water Bottole</div>
+                        </div>
+                        
+                    </div>
+                
+
+
+
+
+                </div>
+
+            </div>
+          
+        </div>
+        <div class="Level-Item">
+            <h3>Level</h3>
+            <span id="Level-Number">0</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
